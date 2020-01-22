@@ -1,0 +1,12 @@
+body{
+    background: gray;
+    }
+    
+canvas{
+  cursor:url(aero_link_L.cur),default;
+  background: yellow;
+  opacttiry: .5;
+  position: relative;
+  top: 250px;
+  left: 500px;
+  }
