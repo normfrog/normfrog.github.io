@@ -1,23 +1,41 @@
-<!DOCTYPE HTML>
-<HTML>
-<HEAD>
-<TITLE>Next step</TITLE>
-<meta charset="UTF-8">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+  background-color: lightblue;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+    <center><b>
+        "Congrats on solving that tricky puzzle!"
+        </b></center>
+<p>Now, you must find the key:</p>
 
-</HEAD>
-<BODY>
-<center>
-  
-    <h1><b> <font size="+2">Congrats on solving that tricky puzzle!</font> </b></h1>
-    
-    
-   <br>
+<button onclick="myFunction()">open</button>
 
-    <p>Now, you must find the key. Search for the html.</p>
-    </center>
-</BODY>
+<div id="myDIV">
+Look inside the html.
+</div>
     
-//Locate the backside of the phone. Take what is yours.//
+    <p><b>Note:</b> this is a hint. If you choose to open it, it means you are weak.</p>
     
-</HTML>
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
